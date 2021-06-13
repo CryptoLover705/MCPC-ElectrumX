@@ -2672,7 +2672,9 @@ class MobilePayCoin(Coin):
     RPC_PORT = 49452
 
 
-    @classmethod
-    def header_hash(cls, header):
+
+        @classmethod
+        def header_hash(cls, header):
+            '''Given a header return the hash.'''
             import quark_hash
             return quark_hash.getPoWHash(header)
