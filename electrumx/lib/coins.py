@@ -2670,7 +2670,9 @@ class MobilePayCoin(Coin):
     TX_COUNT_HEIGHT = 159810
     TX_PER_BLOCK = 2
     RPC_PORT = 49452
-    
+    SESSIONCLS = DashElectrumX
+    DAEMON = daemon.DashDaemon
+
     @classmethod
     def header_hash(cls, header):
         '''Given a header return the hash.'''
