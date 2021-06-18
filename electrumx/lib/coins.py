@@ -2671,8 +2671,6 @@ class MobilePayCoin(Coin):
     TX_PER_BLOCK = 2
     RPC_PORT = 49452
     
-    SESSIONCLS = MobilePayCoinElectrumX
-
     @classmethod
     def header_hash(cls, header):
         '''Given a header return the hash.'''
