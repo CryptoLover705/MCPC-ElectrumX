@@ -2670,8 +2670,8 @@ class MobilePayCoin(Coin):
     TX_COUNT_HEIGHT = 159810
     TX_PER_BLOCK = 2
     RPC_PORT = 49452
-
-
+    DAEMON = daemon.MobilePayCoinDaemon
+    SESSIONCLS = MobilePayCoinElectrumX
 
     @classmethod
     def header_hash(cls, header):
